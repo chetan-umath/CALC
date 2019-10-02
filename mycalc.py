@@ -4,17 +4,21 @@ from math import *
 root=Tk()
 e=Entry(root,width=16,font='Arial 30 bold',bd=7,relief='sunken',bg='dark gray',justify='right')
 e.grid(row=0,column=0,columnspan=5)
+current="new entry"
+prev=0
 
 def add_entry(x):
     e.insert(16,x)
 
 def reciprocal():
+    prev=1
     q=(float(e.get()))
     C()
     r=1/q
     add_entry(r)
     
 def result(y):
+    prev=2
     e.delete(0,16)
     e.insert(16,y)
     
@@ -23,6 +27,8 @@ def C():
     
 def Ac():
      e.delete(0)
+     current="entry changed"
+     prev=1
     
 def sqare():
     q=(float(e.get()))
@@ -30,6 +36,8 @@ def sqare():
     r=sqrt(q)
     add_entry(r)
 
+if(prev):
+    print("calc gets updated")
 
 
 
