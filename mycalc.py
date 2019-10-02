@@ -11,14 +11,12 @@ def add_entry(x):
     e.insert(16,x)
 
 def reciprocal():
-    prev=1
     q=(float(e.get()))
     C()
     r=1/q
     add_entry(r)
     
 def result(y):
-    prev=2
     e.delete(0,16)
     e.insert(16,y)
     
@@ -38,7 +36,13 @@ def sqare():
 
 if(prev):
     print("calc gets updated")
-
+new = 0
+if(prev=="made changes"):
+    print("bug resolved")
+else:
+    new = 1
+if(new == "object"):
+    print("updated successfully")
 
 
 Button(root,text='7',width=3,height=2,command=lambda:add_entry('7')).grid(row=1,column=0,sticky=E+W+N+S)
