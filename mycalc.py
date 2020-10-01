@@ -29,7 +29,21 @@ def sqare():
     C()
     r=sqrt(q)
     add_entry(r)
-
+def result(y):
+    e.delete(0,16)
+    e.insert(16,y)
+    
+def C():
+    e.delete(0,END)
+    
+def Ac():
+     e.delete(0)
+    
+def sqare():
+    q=(float(e.get()))
+    C()
+    r=sqrt(q)
+    add_entry(r)
 
 
 
