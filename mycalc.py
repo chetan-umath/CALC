@@ -3,6 +3,11 @@ from math import *
 
 root=Tk()
 e=Entry(root,width=16,font='Arial 30 bold',bd=7,relief='sunken',bg='dark gray',justify='right')
+e=Entry(root,width=16,font='Arial 30 bold',bd=7,relief='sunken',bg='dark gray',justify='right')
+e=Entry(root,width=16,font='Arial 30 bold',bd=7,relief='sunken',bg='dark gray',justify='right')
+e=Entry(root,width=16,font='Arial 30 bold',bd=7,relief='sunken',bg='dark gray',justify='right')e=Entry(root,width=16,font='Arial 30 bold',bd=7,relief='sunken',bg='dark gray',justify='right')
+e=Entry(root,width=16,font='Arial 30 bold',bd=7,relief='sunken',bg='dark gray',justify='right')e=Entry(root,width=16,font='Arial 30 bold',bd=7,relief='sunken',bg='dark gray',justify='right')
+e=Entry(root,width=16,font='Arial 30 bold',bd=7,relief='sunken',bg='dark gray',justify='right')
 e.grid(row=0,column=0,columnspan=5)
 
 def add_entry(x):
